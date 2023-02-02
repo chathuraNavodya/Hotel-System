@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="202.0" prefWidth="352.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainFormController">
+   <children>
+      <ImageView fitHeight="535.0" fitWidth="967.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/main.jpg" />
+         </image>
+      </ImageView>
+      <Pane opacity="0.52" prefHeight="535.0" prefWidth="960.0" style="-fx-background-radius: 00; -fx-background-color: black;">
+         <children>
+            <ImageView fitHeight="51.0" fitWidth="55.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/hotel%20logo.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="72.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BLUE OCEAN">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="551.0" layoutY="59.0" opacity="0.78" prefHeight="438.0" prefWidth="376.0" style="-fx-background-radius: 30; -fx-background-color: black;">
+         <children>
+            <Pane layoutX="41.0" layoutY="104.0" prefHeight="59.0" prefWidth="295.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+               <children>
+                  <TextField fx:id="UserName" layoutX="14.0" layoutY="14.0" prefHeight="31.0" prefWidth="266.0" style="-fx-background-radius: 30;" />
+               </children>
+            </Pane>
+            <Pane layoutX="41.0" layoutY="255.0" prefHeight="59.0" prefWidth="295.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+               <children>
+                  <PasswordField fx:id="PasswordId" layoutX="19.0" layoutY="14.0" prefHeight="31.0" prefWidth="255.0" style="-fx-background-radius: 50;" />
+               </children>
+            </Pane>
+            <Text fill="WHITE" layoutX="41.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name" wrappingWidth="180.39404296875">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="41.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="180.39404296875">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Text>
+            <Button layoutX="121.0" layoutY="368.0" mnemonicParsing="false" onAction="#signUpButtonAnAction" prefHeight="31.0" prefWidth="134.0" style="-fx-background-radius: 50; -fx-background-color: yellow;" text="SIGN UP">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Text fill="WHITE" layoutX="36.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Get The Ultimate Experiance" wrappingWidth="237.63916015625">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

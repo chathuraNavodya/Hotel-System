@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="535.0" prefWidth="967.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BookingFormController">
+   <children>
+      <ImageView fitHeight="541.0" fitWidth="967.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/booking.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="857.0" layoutY="7.0" mnemonicParsing="false" onAction="#Back3" prefHeight="39.0" prefWidth="82.0" text="Back" />
+      <Pane layoutX="57.0" layoutY="331.0" prefHeight="53.0" prefWidth="307.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#CancleBooking" prefHeight="53.0" prefWidth="307.0" style="-fx-background-radius: 50;" text="Cancle Booking">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Button>
+         </children>
+      </Pane>
+      <Pane layoutX="63.0" layoutY="236.0" prefHeight="53.0" prefWidth="307.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#Register" prefHeight="53.0" prefWidth="307.0" style="-fx-background-radius: 50;" text="Register">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Button>
+         </children>
+      </Pane>
+      <Button layoutX="63.0" layoutY="140.0" mnemonicParsing="false" onAction="#CheckAvailability" prefHeight="53.0" prefWidth="307.0" style="-fx-background-radius: 50;" text="Check Availability">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
